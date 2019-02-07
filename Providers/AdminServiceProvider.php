@@ -9,8 +9,8 @@ class AdminServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__.'/../Views'   => resource_path('views/vendor/admin'),
-            __DIR__.'/../public/' => public_path('vendor/assets/'),
+            __DIR__.'/../Views'   => resource_path('views/'),
+            __DIR__.'/../public/assets' => public_path('assets/'),
         ], 'adminstart');
 
     }
