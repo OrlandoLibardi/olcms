@@ -1,0 +1,25 @@
+{
+    "name": "orlandolibardi/olcms",
+    "description": "Front-end base para painel administrativo em Laravel 5.6",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Orlando Libardi",
+            "email": "orlando.libardi@gmail.com"
+        }
+    ],
+    "require": {},
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Modules\\Admin\\": "./"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\Admin\\Providers\\AdminServiceProvider"
+            ]
+        }
+    }
+}
