@@ -10,7 +10,7 @@ class AdminServiceProvider extends ServiceProvider
     {
         $this->publishes([
             __DIR__.'/../Views'   => resource_path('views/'),
-            __DIR__.'/../public/assets' => public_path('assets/'),
+            __DIR__.'/../public' => public_path('assets/'),
         ], 'adminstart');
 
     }
